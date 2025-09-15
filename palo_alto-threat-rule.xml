@@ -1,0 +1,39 @@
+
+<group name="paloalto,threat">
+  
+  <rule id="900100" level="5">
+    <decoded_as>paloalto_threat</decoded_as>
+    <field name="serverity">low</field>
+    <description>Palo Alto Firewall - low Severity Threat: $(threat_name/id) from $(src_ip) to $(dst_ip) via $(application)</description>
+    <group>paloalto,threat</group>
+  </rule>
+  
+  <rule id="900101" level="3">
+    <decoded_as>paloalto_threat</decoded_as>
+    <field name="serverity">informational</field>
+    <description>Palo Alto Firewall - informational Threat: $(threat_name/id) from $(src_ip) to $(dst_ip) via $(application)</description>
+    <group>paloalto,threat</group>
+  </rule>
+
+  <rule id="900102" level="9">
+    <decoded_as>paloalto_threat</decoded_as>
+    <field name="serverity">medium</field>
+    <description>Palo Alto Firewall - Medium Severity Threat: $(threat_name/id) from $(src_ip) to $(dst_ip) via $(application)</description>
+    <group>paloalto,threat</group>
+  </rule>
+  
+  <rule id="900103" level="13">
+    <decoded_as>paloalto_threat</decoded_as>
+    <field name="serverity">high</field>
+    <description>Palo Alto Firewall - High Severity Threat: $(threat_name/id) from $(src_ip) to $(dst_ip) via $(application)</description>
+    <group>paloalto,threat</group>
+  </rule>
+  
+  <rule id="900104" level="15">
+    <decoded_as>paloalto_threat</decoded_as>
+    <field name="serverity">critical</field>
+    <description>Palo Alto Firewall - Critical Severity Threat: $(threat_name/id) from $(src_ip) to $(dst_ip) via $(application)</description>
+    <group>paloalto,threat</group>
+  </rule>
+  
+</group>
